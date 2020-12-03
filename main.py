@@ -15,7 +15,7 @@ root.title("Hangman")
 
 
 #images
-hangman0 = PhotoImage(file = "C://Users//Carl//Desktop//Hangman//hangman0.png")
+hangman0 = PhotoImage(file = "C://Users//Carl//Desktop//Hangman//images//images//hangman0.png")
 hangman1 = PhotoImage(file = "C://Users//Carl//Desktop//Hangman//images//images//hangman1.png")
 hangman2 = PhotoImage(file = "C://Users//Carl//Desktop//Hangman//images//images//hangman2.png")
 hangman3 = PhotoImage(file = "C://Users//Carl//Desktop//Hangman//images//images//hangman3.png")
@@ -30,7 +30,7 @@ chances.grid(row = 0,column = 0)
 
 #functioning of code
 
-word = 'CODING'
+word = 'DEVELOPMENT' #you could create a list of words and append any random word
 
 random_word = [x for x in word]
 print(random_word)
@@ -46,15 +46,6 @@ for i in random_word:
 for i in range(5):
 	sample.insert(random.randint(0,10),random.choice(eg))
 
-print(sample)
-
-
-
-
-
-
-#word_str = " ".join(random_word)
-#print(word_str)
 
 word_label = Label(root,text = check_word,font= ("comicsans",50,"bold"))
 word_label.grid(row=0,column=1)
@@ -90,8 +81,6 @@ def hi():
 			except IndexError:
 				tmsg.showerror("You lose","Sorry, chances over")
 
-						
-	
 	alp.set("")
 	
 
